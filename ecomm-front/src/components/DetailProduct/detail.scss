@@ -1,0 +1,107 @@
+@import '../../styles/variables.scss';
+
+.details-product {
+    font-family: $family-card;
+
+    .detail-img {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .detail-descp {
+        display: flex;
+        flex-direction: column;
+        margin-right: 4%;
+
+        .descp-name {
+            font-size: 2rem;
+            font-style: italic;
+            font-weight: bold;
+            padding-bottom: 2%;
+        }
+
+        .descp-brand {
+            font-size: 1.5rem;
+            font-style: italic;
+            padding-bottom: 1%;
+        }
+
+        .descp-all {
+            font-size: 1.1rem;
+            padding-bottom: 1.5%;
+            min-height: 10rem;
+        }
+
+        .descp-sku {
+            color: #555;
+
+            .sku-title {
+                font-weight: bold;
+                padding: 0.5rem;
+            }
+        }
+
+        .descp-buttons.is-grid.cols2 {
+            // display: block;
+
+            button {
+                margin: 1% 2%;
+                font-size: 1.5rem;
+                background-color: #fff;
+                cursor: pointer;
+                list-style: none;;
+            }
+
+            .descp-col {
+                padding: 3% 0%;
+
+                .col-title {
+                    font-weight: bold;
+                }
+
+                .buttons-amount {
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 2% 0%;
+
+                    .btn-count {
+                        background-color: $primary;
+                        color: #fff;
+                        width: 10%;
+                    }
+
+                    .input-count {
+                        display: flex;
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
+
+                .sizes {
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: stretch;
+                    padding: 2% 0%;
+
+                    .btn-size{
+                        width: 3.5rem;
+                        font-size: 1rem;
+                        margin: 1% 0.5%;
+                    }
+                }
+            }
+
+            .button-add-cart {
+                background-color: $secondary;
+                color: #fff;
+            }
+
+            .button-buy {
+                background-color: $primary;
+                color: #fff;
+            }
+        }
+    }
+}
+
