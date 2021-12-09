@@ -1,0 +1,148 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.is-primary {
+    background-color: $primary;
+    color: #fff;
+}
+
+.fam-card {
+    font-family: $family-card;
+}
+
+.section {
+    padding: 6rem 0.5rem;
+
+    &.is-medium {
+        padding: 0% 1rem 2.5rem;
+    }
+
+    &.is-large {
+        padding: 16rem 6rem;
+    }
+}
+
+.is-grid {
+    display: grid;
+}
+
+.cols2 {
+    grid-template-columns: repeat(2 , 1fr);
+
+    &.w6-4 {
+        grid-template-columns: 60% 40%;
+    }
+}
+
+.cols4 {
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+.cols5 {
+    grid-template-columns: repeat(5 , 1fr);
+}
+
+.is-flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.pt-0 {
+    padding-top: 0%;
+}
+
+.pt-2 {
+    padding-top: 2%;
+}
+
+.plr-4 {
+    padding: 0% 4%;
+}
+
+.pb-2 {
+    padding-bottom: 2%;
+}
+
+.m-3r {
+    margin: 3rem;
+}
+
+.mt-2 {
+    margin-top: 5%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.fz-1r {
+    font-size: 1.5rem;
+}
+
+button,
+.cursor-p {
+    cursor: pointer;
+}
+
+.form {
+    @include font-card;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    font-family: $family-form;
+    margin: auto;
+
+    &-title {
+        display: flex;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 2%;
+
+        &-icon {
+            display: inline-flex;
+            align-items: center;
+            height: auto;
+            padding: 0% 1%;
+        }
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        padding: 3% 0;
+
+        .form-item {
+            display: flex;
+            flex-direction: column;
+            margin: 0% 10%;
+
+            .form-label {
+                padding: 2%;
+            }
+
+            .form-input {
+                padding: 2%;
+            }
+
+            .form-button {
+                margin-top: 3%;
+                padding: 2%;
+                font-weight: bold;
+            }
+        }
+    }
+}

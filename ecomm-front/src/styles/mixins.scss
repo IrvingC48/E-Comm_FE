@@ -1,0 +1,37 @@
+@mixin item {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    line-height: 1.5;
+    padding: 0.5rem 0.75rem;
+};
+
+@mixin nav-justify($justify: flex-start) {
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: $justify;
+    align-content: center;
+    line-height: 1.5px;
+};
+
+@mixin item-foo {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    line-height: 1.5;
+};
+
+@mixin font-card {
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+    color: #4a4a4a;
+}
