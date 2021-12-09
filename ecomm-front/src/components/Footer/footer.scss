@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.footer {
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr 80%;
+    padding: 2% 0;
+
+    &-brand {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+        &-title {
+            font-family: $family-logo;
+            font-size: 2rem;
+            text-transform: none;
+            font-weight: bold;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .footer-menu {
+            display: flex;
+            justify-content: space-evenly;
+
+            .footer-links {
+                display: block;
+
+                &-title {
+                    font-size: 1.5rem;
+                }
+
+                &-item {
+                    @include item-foo;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+.foo-level {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 1% 0%;
+}
