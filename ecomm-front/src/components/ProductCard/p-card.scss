@@ -1,0 +1,73 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+
+.pd-4 {
+    padding: 1rem;
+}
+
+.card {
+    @include font-card;
+    max-width: auto;
+    position: relative;
+    font-family: $family-card;
+
+    &-image {
+        display: inline-block;
+        position: relative;
+
+        .image {
+            display: block;
+            position: relative;
+            height: auto;
+            max-width: 100%;
+        }
+
+    }
+
+    &-detail {
+        background-color: transparent;
+        padding: 1.5rem;
+
+        .shoe-name {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            margin-bottom: 0.5rem;
+            min-height: 6rem;
+            max-height: 6.5rem;
+
+
+            .title {
+                font-size: 1.3rem;
+            }
+
+            .brand {
+                font-size: 1.1rem;
+                padding-bottom: 1%;
+                font-style: italic;
+            }
+        }
+
+        .description {
+            padding: 1rem 0%;
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            .title {
+                color: #3a3a3a;
+                font-weight: 600;
+            }
+
+            .sku {
+                color: #555;
+            }
+        }
+
+        .buy-price {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    }
+}
