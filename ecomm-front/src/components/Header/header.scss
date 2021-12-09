@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.navbar {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: stretch;
+
+    &-brand {
+        font-family: $family-logo;
+        font-size: 24px;
+        text-transform: none;
+        font-weight: bold;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        padding: 0 1rem
+        ;
+    }
+
+    &-menu {
+        flex-grow: 1;
+        flex-shrink: 0;
+        align-items: stretch;
+        display: flex;
+
+        .navbar-start {
+            @include nav-justify();
+            margin-right: auto;
+
+            .navbar-item {
+                @include item;
+
+                .icon {
+                    display: inline-flex;
+                    align-items: center;
+                    height: 1.5rem;
+                    width: 1rem;
+                }
+            }
+        }
+
+        .navbar-end {
+            @include nav-justify(flex-end);
+            margin-left: auto;
+
+            .navbar-item {
+                @include item;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
