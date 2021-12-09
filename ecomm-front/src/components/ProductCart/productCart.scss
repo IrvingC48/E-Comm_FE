@@ -1,0 +1,35 @@
+.container-pc {
+    // padding: 5% 0%;
+    .product-cart {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2% 0%;
+
+        .pc-image {
+            display: inline-block;
+            position: relative;
+
+            .image {
+                display: block;
+                position: relative;
+                max-width: 128px;
+                margin: auto;
+            }
+        }
+
+        .pc-name {
+            width: 30%;
+        }
+
+        .input-count {
+            width: 10%;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        .pc-price {
+            font-size: 1.5rem;
+        }
+    }
+}
